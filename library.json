@@ -1,0 +1,26 @@
+{
+	"name": "mcu_sn",
+	"keywords": "mcu sn, mcu id, STM32",
+	"description": "get mcu sn",
+	"version": "1.0.0",
+	"authors": {
+		"name": "zhongj",
+		"url": "https://github.com/featherfly",
+		"maintainer": true
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/featherfly/mcu_sn.git"
+	},
+	"homepage": "https://github.com/featherfly/mcu_sn/",
+	"frameworks": [
+		"*"
+	],
+	"platforms": "*",
+	"examples": "examples/*/*.ino",
+	"build": {
+		"srcDir": "src"
+	},
+	"dependencies": [
+	]
+}
