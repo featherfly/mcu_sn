@@ -21,7 +21,13 @@ void __write_stm32_mcu_id_hex_Str(int index)
 }
 
 /*初始化MCU的唯一ID*/
-void __init_stm32_id(STM32_TYPE type)
+void __init_stm32_id_(STM32_TYPE type)
+{
+    __init_stm32_id(type);
+}
+
+/*初始化MCU的唯一ID*/
+void __init_stm32_id(int type)
 {
     if (!_init)
     {
@@ -35,7 +41,16 @@ void __init_stm32_id(STM32_TYPE type)
     }
 }
 
-#if defined(STM32_F0)
+#if defined(CH32_F1)
+
+char *get_mcu_sn()
+{
+    // ch32f1和stm32f1是一样的地址
+    __init_stm32_id(STM32F1MCU); 
+    return stm32McuIdHexStr;
+}
+
+#elif defined(STM32_F0)
 
 char *get_mcu_sn()
 {

@@ -1,13 +1,7 @@
 #ifndef MCU_STM32_H
 #define MCU_STM32_H
 
-#ifndef __cplusplus
-#define nullptr NULL
-#endif
-
-#ifndef uint32_t
-typedef unsigned int uint32_t;
-#endif
+#include <types.h>
 
 #ifdef __cplusplus
 extern "C"
@@ -39,7 +33,7 @@ extern "C"
     static unsigned char _idBytes[4];
     static char _hexStr[2];
 
-    static int _init = 0; 
+    static int _init = 0;
 
     static uint32_t stam32IdAddr[] =
         {

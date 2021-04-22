@@ -22,5 +22,9 @@
 		"srcDir": "src"
 	},
 	"dependencies": [
+		{
+			"name": "c_commons",
+        	"version": "https://gitee.com/featherfly/c_commons.git"
+		}
 	]
 }
