@@ -38,6 +38,10 @@ void __init_stm32_id(int type)
         __write_stm32_mcu_id_hex_Str(0);
         __write_stm32_mcu_id_hex_Str(1);
         __write_stm32_mcu_id_hex_Str(2);
+
+        stm32McuIdHexStr[24] = '\0';
+
+        _init = 1;
     }
 }
 
