@@ -1,6 +1,6 @@
 #include "mcu_lgt8f328p.h"
 
-#include "stdio.h"
+#include <stdio.h>
 
 #ifndef GUID0
 #define GUID0	(*((volatile unsigned char *)0xF3))
