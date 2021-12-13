@@ -23,12 +23,6 @@ void __write_stm32_mcu_id_hex_Str(int index)
 }
 
 /*初始化MCU的唯一ID*/
-void __init_stm32_id_(STM32_TYPE type)
-{
-    __init_stm32_id(type);
-}
-
-/*初始化MCU的唯一ID*/
 void __init_stm32_id(int type)
 {
     if (!_init)
@@ -45,6 +39,12 @@ void __init_stm32_id(int type)
 
         _init = 1;
     }
+}
+
+/*初始化MCU的唯一ID*/
+void __init_stm32_id_(STM32_TYPE type)
+{
+    __init_stm32_id(type);
 }
 
 #if defined(CH32_F1)
