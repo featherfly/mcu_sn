@@ -1,3 +1,5 @@
+#ifdef MCU_INCLUDE_LGT8F_H
+
 #ifndef MCU_LGT8F328P_H
 #define MCU_LGT8F328P_H
 
@@ -14,6 +16,8 @@ extern "C"
 
 #ifdef __cplusplus
 }
+#endif
+
 #endif
 
 #endif

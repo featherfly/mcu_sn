@@ -1,5 +1,7 @@
 #include "mcu_stm32.h"
 
+#ifdef MCU_INCLUDE_STM32_H
+
 #include "stdlib.h"
 #include "numbers.h"
 #include "arrays.h"
@@ -140,5 +142,7 @@ char *get_mcu_sn()
 {
     return "UNKNOW STM32 MCU";
 }
+
+#endif
 
 #endif

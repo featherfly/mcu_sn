@@ -1,11 +1,19 @@
 #include "mcu.h"
 
-#ifdef MCU_INCLUDE_H
+#if defined(MCU_INCLUDE_STM32_H)
+
+#include "mcu_stm32.h"
+
+#elif defined(MCU_INCLUDE_LGT8F_H)
+
+#include "mcu_lgt8f328p.h"
+
+#elif defined(MCU_INCLUDE_H)
 
 #include MCU_INCLUDE_H
 
 #else
 
-#include "mcu_stm32.h"
+// 提示
 
 #endif

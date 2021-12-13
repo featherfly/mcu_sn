@@ -1,5 +1,7 @@
 #include "mcu_lgt8f328p.h"
 
+#ifdef MCU_INCLUDE_LGT8F_H
+
 #include <stdio.h>
 
 #ifndef GUID0
@@ -50,3 +52,6 @@ char *get_mcu_sn()
     __init_lgt8f328p_id(); 
     return lgtx8pMcuIdHexStr;
 }
+
+
+#endif

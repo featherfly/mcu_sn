@@ -1,3 +1,5 @@
+#ifdef MCU_INCLUDE_STM32_H
+
 #ifndef MCU_STM32_H
 #define MCU_STM32_H
 
@@ -51,6 +53,8 @@ extern "C"
 
 #ifdef __cplusplus
 }
+#endif
+
 #endif
 
 #endif
