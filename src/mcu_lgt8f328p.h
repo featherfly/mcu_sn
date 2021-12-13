@@ -5,6 +5,8 @@
 
 #include <types.h>
 
+#include "mcu.h"
+
 #ifdef __cplusplus
 extern "C"
 {
