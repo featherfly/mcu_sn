@@ -47,16 +47,7 @@ void __init_stm32_id_(STM32_TYPE type)
     __init_stm32_id(type);
 }
 
-#if defined(CH32_F1)
-
-char *get_mcu_sn()
-{
-    // ch32f1和stm32f1是一样的地址
-    __init_stm32_id(STM32F1MCU); 
-    return stm32McuIdHexStr;
-}
-
-#elif defined(STM32_F0)
+#if defined(STM32_F0)
 
 char *get_mcu_sn()
 {
@@ -64,7 +55,7 @@ char *get_mcu_sn()
     return stm32McuIdHexStr;
 }
 
-#elif defined(STM32_F1)
+#elif defined(STM32_F1) || defined(CH32_F1) || defined(GD32_E1)
 
 char *get_mcu_sn()
 {
